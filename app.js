@@ -1,0 +1,10 @@
+const body=document.body;
+const toggle=document.getElementById('themeToggle');
+const saved=localStorage.getItem('theme');
+if(saved==='dark') body.classList.add('dark');
+toggle?.addEventListener('click',()=>{body.classList.toggle('dark');localStorage.setItem('theme',body.classList.contains('dark')?'dark':'light')});
+const progress=document.getElementById('progress');
+addEventListener('scroll',()=>{const h=document.documentElement;const max=h.scrollHeight-h.clientHeight;progress.style.width=(max?scrollY/max*100:0)+'%'},{passive:true});
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.getElementById('year').textContent=new Date().getFullYear();
