@@ -1,5 +1,13 @@
-# Abdulrahim Althobaiti — Digital HQ
+# عبدالرحيم الثبيتي — Digital HQ
 
-Personal portfolio for Abdulrahim Althobaiti.
+موقع مهني شخصي عربي لعبدالرحيم محمد الثبيتي، PMP®.
 
-Positioning: Project & Program Management | Digital Transformation | Operational Excellence.
+**التموضع المهني:** إدارة المشاريع والبرامج | التحول الرقمي | التميز التشغيلي
+
+## التصميم
+DIGITAL HQ — Modern: واجهة حديثة وخفيفة، RTL، متجاوبة، مع وضع فاتح/داكن، مسار مهني، مشاريع مختارة، اعتمادات، مهارات رقمية، ومنهجية العمل:
+
+**أقيس ← أفهم ← أحوّل ← أنفّذ**
+
+## النشر
+الموقع Static ومهيأ للنشر عبر GitHub Pages من الفرع `main`.
