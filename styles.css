@@ -104,3 +104,19 @@ footer{padding:28px 0 36px;display:flex;justify-content:space-between;color:var(
 .impact span{font-size:13px;color:var(--ink)}
 @media(max-width:980px){.project-showcase{grid-template-columns:1fr}.project-showcase .project-card,.project-showcase .project-card:nth-child(5){grid-column:auto;grid-template-columns:1fr 1fr}}
 @media(max-width:680px){.project-showcase .project-card,.project-showcase .project-card:nth-child(5){grid-template-columns:1fr}.project-media{min-height:220px}.project-body h3{font-size:21px}}
+
+/* Real project gallery — Arab Summit */
+.summit-card{grid-template-columns:48% 52%!important}
+.project-gallery{position:relative;min-height:320px;overflow:hidden;background:#111827}
+.gallery-track,.gallery-slide{width:100%;height:100%}
+.gallery-track{position:absolute;inset:0}
+.gallery-slide{position:absolute;inset:0;object-fit:cover;object-position:center;opacity:0;transform:scale(1.015);transition:opacity .35s ease,transform .6s ease}
+.gallery-slide.active{opacity:1;transform:scale(1)}
+.project-gallery:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,12,24,.02) 45%,rgba(8,12,24,.62) 100%);pointer-events:none}
+.gallery-btn{position:absolute;z-index:3;top:50%;transform:translateY(-50%);width:42px;height:42px;border:1px solid rgba(255,255,255,.45);border-radius:50%;background:rgba(15,20,35,.48);backdrop-filter:blur(10px);color:#fff;font-size:25px;line-height:1;cursor:pointer;display:grid;place-items:center;transition:.2s}
+.gallery-btn:hover{background:rgba(95,92,242,.88);border-color:transparent}
+.gallery-prev{right:14px}.gallery-next{left:14px}
+.gallery-counter{position:absolute;z-index:3;left:18px;bottom:16px;padding:6px 10px;border-radius:999px;background:rgba(15,20,35,.58);backdrop-filter:blur(8px);color:#fff;font-size:11px;font-weight:800}
+.gallery-label{position:absolute;z-index:3;right:18px;bottom:18px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.12em}
+@media(max-width:980px){.summit-card{grid-template-columns:1fr 1fr!important}}
+@media(max-width:680px){.summit-card{grid-template-columns:1fr!important}.project-gallery{min-height:240px}}
