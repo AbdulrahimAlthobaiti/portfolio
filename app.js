@@ -8,3 +8,7 @@ addEventListener('scroll',()=>{const d=document.documentElement;const max=d.scro
 const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting) entry.target.classList.add('visible')}),{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 document.getElementById('year').textContent=new Date().getFullYear();
+const menuToggle=document.getElementById('menuToggle');
+const mainNav=document.getElementById('mainNav');
+menuToggle?.addEventListener('click',()=>mainNav?.classList.toggle('open'));
+mainNav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mainNav.classList.remove('open')));
